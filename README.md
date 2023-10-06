@@ -1,10 +1,10 @@
-# alx_capstone_project
-
 # Flask Blogging Platform README
+
+# Project overview
 
 Welcome to the Flask Blogging Platform! This is a simple and customizable web application built with Python and Flask, designed to help you create and manage your own blogs. Whether you're a blogger looking for a new platform or a developer interested in building on top of this project, this guide will help you get started.
 
-## Features
+## Features and functionalities
 
 - **User Registration and Authentication:** Users can create accounts, log in securely, and manage their profiles.
 - **Create and Edit Posts:** Users can easily create, edit, and delete blog posts with a user-friendly interface.
@@ -18,6 +18,15 @@ Welcome to the Flask Blogging Platform! This is a simple and customizable web ap
 - **Social Media Sharing:** Share your blog posts effortlessly on various social media platforms.
 - **Analytics:** Gain insights into your blog's performance with basic analytics.
 - **Admin Panel:** Administrators can manage users, posts, and comments.
+
+# Technologies used
+
+This project uses the following programming technologies:
+                                 1. **HTML**
+                                 2. **CSS**
+                                 3. **PYTHON**
+                                 4. **FLASK**
+                                 5. **JAVASCRIPT**
 
 ## Getting Started
 
@@ -61,6 +70,11 @@ To set up and run the Flask Blogging Platform, follow these steps:
 
 7. **Access the Application:** Open a web browser and navigate to `http://localhost:5000` to access the Flask Blogging Platform.
 
+## Project link and demo
+
+The following is the link to the final demo of the project at figma: https://www.figma.com/file/dUdS3WvE6nu4XLyeTMtb1y/Chatter-project-(Copy)?type=design&node-id=7-8&mode=design&t=hT8o9LBEUsskV9Jc-0
+
+
 ## Customization
 
 The Flask Blogging Platform is highly customizable. You can modify the templates, styles, and functionality to suit your specific needs.
@@ -71,14 +85,4 @@ The Flask Blogging Platform is highly customizable. You can modify the templates
 
 ## Contributing
 
-We welcome contributions from the community. If you would like to contribute to the development of the Flask Blogging Platform, please follow our [contribution guidelines](CONTRIBUTING.md).
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## Support
-
-If you encounter any issues or have questions about the Flask Blogging Platform, please [create an issue](https://github.com/your-repo/issues) on our GitHub repository.
-
-Happy Blogging with Flask!
+This project is free and open source. Any contributions are further welcome for the overall improvement of the project.If any issues feel free to contact me through the email: charleswilliam26@gmail.com.
