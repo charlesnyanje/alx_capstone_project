@@ -70,7 +70,7 @@ To set up and run the Flask Blogging Platform, follow these steps:
 
 7. **Access the Application:** Open a web browser and navigate to `http://localhost:5000` to access the Flask Blogging Platform.
 
-## Project link and demo
+## Project link and demo(Project's prototype)
 
 The following is the link to the final demo of the project at figma: https://www.figma.com/file/dUdS3WvE6nu4XLyeTMtb1y/Chatter-project-(Copy)?type=design&node-id=7-8&mode=design&t=hT8o9LBEUsskV9Jc-0
 
