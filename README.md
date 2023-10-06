@@ -74,6 +74,10 @@ To set up and run the Flask Blogging Platform, follow these steps:
 
 The following is the link to the final demo of the project at figma: https://www.figma.com/file/dUdS3WvE6nu4XLyeTMtb1y/Chatter-project-(Copy)?type=design&node-id=7-8&mode=design&t=hT8o9LBEUsskV9Jc-0
 
+## Link to project's flow chart
+Below is a link to show the flow chart of the project.
+
+https://lucid.app/lucidchart/009cd9a6-2266-4434-a198-7da1efc88216/edit?viewport_loc=-458%2C1000%2C2688%2C1290%2C0_0&invitationId=inv_97a78e29-d4ba-44e7-88ef-20861dbedfb1
 
 ## Customization
 
