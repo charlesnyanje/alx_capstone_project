@@ -1,0 +1,272 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100vw;
+  overflow-x: hidden;
+}
+.header {
+  margin: 0;
+  width: 100vw;
+  height: 50px;
+  position: fixed;
+  background-color: #ffffff;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.11);
+  height: 98px;
+  z-index: 1;
+}
+.logo {
+  position: relative;
+  left: 72px;
+  top: 12px;
+}
+.logo h1 {
+  color: #543ee0;
+  position: absolute;
+}
+
+.nav__container {
+  width: 805px;
+  position: relative;
+  left: 560px;
+}
+
+.nav__links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 24px;
+  top: 25px;
+  gap: 2rem;
+  position: relative;
+  width: 293px;
+}
+.nav__links div {
+  font-weight: 700;
+  position: relative;
+  top: 16px;
+}
+.btns {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 2rem;
+  width: 338px;
+  position: relative;
+  left: 337px;
+}
+
+.login__btn {
+  height: 56px;
+  width: 156px;
+  border-radius: 5px;
+  border: 1px solid #543ee0;
+  background-color: #ffffff;
+}
+.signup__btn {
+  height: 56px;
+  width: 156px;
+  border-radius: 5px;
+  border: 1px solid #543ee0;
+  background-color: #ffffff;
+}
+
+button:hover {
+  background-color: #543ee0;
+  cursor: pointer;
+}
+.main {
+  padding-top: 85px;
+}
+
+.first__section {
+  background: linear-gradient(rgba(14, 13, 13, 0.5), rgba(5, 5, 5, 0.5)),
+    url("./background_pics/section_bg.png") center center no-repeat;
+  height: 764px;
+}
+.first-section__text {
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  top: 170px;
+  width: 984px;
+}
+.first-section__head {
+  width: 584px;
+  height: 100px;
+}
+.first-section__head h1 {
+  font-size: 2rem;
+}
+.first-section__p1 {
+  width: 420px;
+  position: relative;
+  right: 80px;
+}
+.first-section__p1 p {
+  font-size: 1rem;
+}
+.first-section__btn {
+  margin-top: 180px;
+  margin-left: 200px;
+}
+
+.first-section__btn button {
+  width: 157px;
+  height: 56px;
+  border-radius: 6px;
+  color: #ffffff;
+  border: 1px solid #543ee0;
+  background-color: #543ee0;
+}
+.second__section{
+  display: flex;
+  flex-direction: row;
+}
+
+.text__div {
+  width: 520px;
+  margin-top: 90px;
+  margin-left: 50px;
+}
+.text__div h1{
+  font-size: 2rem;
+}
+.image__div{
+  position: relative;
+  margin-top: 120px;
+  background: url('./background_pics/sectiontwo.png') center center no-repeat;
+  height: 304px;
+  width: 400px;
+  margin-left: 190px;
+  border-radius: 5px;
+}
+.third__section{
+  margin-top: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 60px;
+}
+.third__section h1{
+  font-size: 2rem;
+}
+.third__section p{
+  width: 800px;
+  height: 81px;
+  line-height: 20px;
+}
+.sub-group__one{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 7rem;
+}
+.sub-group__one img{
+  width: 60px;
+}
+.analytics p{
+  width: 204px;
+
+}
+.socials p{
+  width: 204px;
+}
+.content__creation p{
+  width: 204px;
+}
+.fourth__section{
+  height: 492px;
+  background-color: #FFEDCC;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.fourth__section img{
+  border-radius: 50%;
+  width: 180px;
+}
+.quotes{
+  position: relative;
+  left: 30px;
+  width: 800px;
+}
+.quotes p{
+  font-size: 1rem;
+  font-weight: bold;
+  margin-left: 40px;
+  margin-top: 50px;
+}
+.quotes p span{
+  font-size:small;
+  font-weight: normal;
+}
+.quotes button{
+  width: 157px;
+  height: 56px;
+  border-radius: 6px;
+  color: #ffffff;
+  border: 1px solid #543ee0;
+  background-color: #543ee0;
+  margin-left: 40px;
+}
+.fifth__section{
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 50px;
+  
+}
+.multiple__imgs{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 300px;
+  margin-left: 80px;
+}
+.multiple__imgs img{
+  width: 150px;
+  border-radius: 50%;
+}
+.multiple__imgs .center__img{
+  margin-left: 150px;
+}
+.fifth-section__text{
+  margin-left: 100px;
+  max-width: 600px;
+}
+.fifth-section__text h2{
+  width: 290px;
+  font-size: 1.5rem;
+}
+.fifth-section__text p{
+  width: 500px;
+}
+.fifth-section__text button{
+  width: 157px;
+  height: 56px;
+  border-radius: 6px;
+  color: #ffffff;
+  border: 1px solid #543ee0;
+  background-color: #543ee0;
+}
+footer{
+  height: 302px;
+  background-color: #FFEDCC;
+  display: flex;
+  flex-direction: row;
+  gap: 10rem;
+  padding-top: 80px;
+}
+.footer-content__text{
+  display: flex;
+  flex-direction: row;
+  gap: 10rem;
+  margin-left: 300px;
+}
