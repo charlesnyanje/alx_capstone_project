@@ -1,0 +1,18 @@
+{%extends 'layout.html'%} {%block content%}
+<div class="form__content">
+    <div class="sign__img">
+        <img src="{{url_for('static', filename='background_pics/sign-in-up.png')}}" alt="">
+    </div>
+    <div class="form">
+        <h1>Welcome back</h1>
+        <form action="POST">
+            {{form.hidden_tag()}}
+            {{form.email.label(class='form-label')}}
+             {{form.email(class='form-input')}} 
+             {{form.password.label(class='form-label')}}
+            {{form.password(class='form-input')}}
+             {{form.submit(class='form-submit')}}
+          </form>
+    </div>
+</div>
+{%endblock%}

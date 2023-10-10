@@ -1,0 +1,36 @@
+{%extends 'layout.html'%} {%block content%}
+<div class="form__content">
+  <div class="sign__img">
+    <img
+      src="{{url_for('static', filename='background_pics/sign-in-up.png')}}"
+      alt=""
+    />
+  </div>
+  <div class="registration-form">
+    <h1>Register as a Writer/Reader</h1>
+    <form action="POST">
+      {{form.hidden_tag()}}
+      <div class="name">
+<div class="fname">
+    {{form.first_name.label(class='form-label')}}
+    {{form.first_name(class='name-input')}}
+</div>
+<div class="secname">
+    {{form.last_name.label(class='form-label')}}
+    {{form.last_name(class='name-input')}}
+</div>
+        
+      </div>
+      {{form.dynamic_selection.label(class='form-label')}}
+      {{form.dynamic_selection(class='form-input')}}
+      {{form.email.label(class='form-label')}}
+      {{form.email(class='form-input')}}
+      {{form.password.label(class='form-label')}}
+      {{form.password(class='form-input')}}
+      {{form.confirm_password.label(class='form-label')}}
+      {{form.confirm_password(class='form-input')}}
+      {{form.submit(class='form-submit')}}
+    </form>
+    {% endblock %}
+  </div>
+</div>
