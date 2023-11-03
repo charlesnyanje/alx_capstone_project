@@ -1,0 +1,40 @@
+{%extends "layout.html" %} 
+{%block content%} 
+<div class="content-header">
+    <div class="post-logo">
+        <h1>Chatter</h1>
+    </div>
+    
+    <div class="banner"> 
+        <div class="nav__link">
+            <div>
+                <a href="{{url_for('home')}}">Home</a>
+              </div>
+              <div>
+                <a href="#about">About us</a>
+              </div>
+              <div>
+                <a href="#footer">Contact</a>
+              </div>
+            <div><a href="{{url_for('blogs')}}">Blogs</a></div>
+          </div>       
+        <img src="{{url_for('static', filename='profile_pics/default.jpg')}}" alt="">
+    </div>
+</div>
+<div class="content-section">
+    <form method="POST" action="">
+        {{form.hidden_tag()}}
+        {{form.title(class="title", placeholder='Title')}}
+        <div class="post">
+            
+            {{form.content(class='content', placeholder='Write a post...')}}
+        </div>
+<div class="submit-btn">
+    {{form.submit(class='btn')}}
+</div>
+    </form>
+    <div class="logout-link">
+        <a href="{{url_for('logout')}}">Log out</a>
+    </div>
+ </div>
+{%endblock content%}

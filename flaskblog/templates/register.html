@@ -8,18 +8,19 @@
   </div>
   <div class="registration-form">
     <h1>Register as a Writer/Reader</h1>
-    <form action="POST">
+    <form method="POST">
       {{form.hidden_tag()}}
       <div class="name">
 <div class="fname">
     {{form.first_name.label(class='form-label')}}
     {{form.first_name(class='name-input')}}
 </div>
+
 <div class="secname">
-    {{form.last_name.label(class='form-label')}}
-    {{form.last_name(class='name-input')}}
+  {{form.last_name.label(class='form-label')}}
+  {{form.last_name(class='name-input')}}
 </div>
-        
+       
       </div>
       {{form.dynamic_selection.label(class='form-label')}}
       {{form.dynamic_selection(class='form-input')}}
@@ -31,6 +32,6 @@
       {{form.confirm_password(class='form-input')}}
       {{form.submit(class='form-submit')}}
     </form>
-    {% endblock %}
   </div>
 </div>
+{%endblock content%}

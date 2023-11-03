@@ -1,0 +1,59 @@
+{% extends "layout.html" %}
+{% block content %}
+<header class="blog">
+  <div class="logo">
+    <h1>Flaskblog</h1>
+  </div>
+  <div class="nav__container">
+    <div class="nav__links">
+      <div>
+        <a href="{{url_for('home')}}">Home</a>
+      </div>
+      <div>
+        <a href="#about">About us</a>
+      </div>
+      <div>
+        <a href="#footer">Contact</a>
+      </div>
+      <div><a href="{{url_for('blogs')}}">Blogs</a></div>
+    </div>
+    <div class="btns">
+    
+
+      <form action="{{url_for('logout')}}">
+        <button class="signup__btn" >
+          Log out
+        </button>
+      </form>
+    </div>
+  </div>
+</header>
+        <article class="media">
+          <img  src="{{url_for('static', filename='profile_pics/' + post.author.image_file) }}">
+          <div class="media-body">
+            <div>
+              <a  href="#">{{ post.author.first_name }} {{ post.author.last_name }}</a>
+              <small>{{ post.date_posted.strftime('%Y-%m-%d') }}</small>
+              
+            </div>
+            <h3>{{post.author.dynamic_selection}}</h3>
+            <h2 class="article-title">{{ post.title }}</h2>
+            <p class="article-content">{{ post.content }}</p>
+            {%if post.author == current_user%}
+            <div class="delup-btns">
+              <form action="{{url_for('update_post', post_id=post.id)}}">
+                <input class="btn" type="submit" value="Update">
+              </form>
+
+              <form action="{{url_for('delete_post', post_id=post.id)}}" method="POST">
+                <input class="btn" type="submit" value="Delete">
+            </form>
+            </div>
+            {%endif%}
+          </div>
+        </article>
+
+       
+            
+        </div>
+{% endblock content %}

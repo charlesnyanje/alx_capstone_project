@@ -1,19 +1,33 @@
-{%extends 'layout.html'%} 
-{%block content%}
+{%extends 'layout.html'%} {%block content%}
 <header class="header">
   <div class="logo">
     <h1>Flaskblog</h1>
   </div>
   <div class="nav__container">
     <div class="nav__links">
-      <div>Home</div>
-      <div>About us</div>
-      <div>Contact</div>
-      <div>Blogs</div>
+      <div>
+        <a href="{{url_for('home')}}">Home</a>
+      </div>
+      <div>
+        <a href="#about">About us</a>
+      </div>
+      <div>
+        <a href="#footer">Contact</a>
+      </div>
+      <div><a href="{{url_for('blogs')}}">Blogs</a></div>
     </div>
     <div class="btns">
-      <button class="login__btn">Login</button>
-      <button class="signup__btn">Sign up</button>
+      <form action="{{url_for('login')}}">
+        <button class="signup__btn" >
+          Log in
+        </button>
+      </form>
+
+      <form action="{{url_for('register')}}">
+        <button class="signup__btn" >
+          Sign up
+        </button>
+      </form>
     </div>
   </div>
 </header>
@@ -34,7 +48,7 @@
       <button>Get started</button>
     </div>
   </section>
-  <section class="second__section">
+  <section class="second__section" id="about">
     <div class="text__div">
       <h1>About Chatter</h1>
       <p>
@@ -143,7 +157,7 @@
   <div class="logo">
     <h1>Flaskblog</h1>
   </div>
-  <div class="footer-content__text">
+  <div class="footer-content__text" id="footer">
     <div>
       <h2>Explore</h2>
 
@@ -154,9 +168,9 @@
     <div>
       <h2>Support</h2>
 
-      <p>Support docs</p>
-      <p>Join slack</p>
-      <p>Contact</p>
+      <p>+254674884663</p>
+      <p>info@chatter</p>
+      <p>chatter.co.ke</p>
     </div>
     <div>
       <h2>Official blog</h2>

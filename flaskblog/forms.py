@@ -1,26 +1,50 @@
 from flask_wtf import FlaskForm
-from wtforms import StringField, SubmitField, validators, SelectField, PasswordField, TextAreaField
-from wtforms.validators import DataRequired, EqualTo, Length,  ValidationError
+from wtforms import StringField, PasswordField, SubmitField, TextAreaField, SelectField, SearchField
+from wtforms.validators import DataRequired, Length, Email, EqualTo, ValidationError
+from flaskblog.models import User
 
 
 class RegistrationForm(FlaskForm):
     first_name = StringField('First name', validators=[
-                             DataRequired(), Length(min=4, max=25)])
+        DataRequired(), Length(min=2, max=20)])
     last_name = StringField('Last name', validators=[
-                            DataRequired(), Length(min=4, max=25)])
+        DataRequired(), Length(min=2, max=20)])
+
     dynamic_selection = SelectField(u'You are joining as?', choices=[
         ('Writer', 'Writer'),
         ('Reader', 'Reader'),
     ])
-    email = StringField('Email', validators=[DataRequired()])
+    email = StringField('Email', validators=[DataRequired(), Email()])
     password = PasswordField('Password', validators=[DataRequired()])
     confirm_password = PasswordField('Confirm Password', validators=[
-                                   DataRequired(), EqualTo('password')])
+        DataRequired(), EqualTo('password')])
     submit = SubmitField('Create account')
 
 
+def validate_username(self, first_name, last_name):
+    user = User.query.filter_by(first_name=first_name.data, last_name=last_name.data).first()
+    if user:
+        raise ValidationError(
+            'Username is taken! Please choose another one')
+
+
+def validate_email(self, email):
+    user = User.query.filter_by(email=email.data).first()
+    if user:
+        raise ValidationError('Email is taken! Please choose another one')
+
+
 class LoginForm(FlaskForm):
-    email = email = StringField('Email address', validators=[DataRequired()])
-    password = password = PasswordField(
+     email = StringField('Email address', validators=[DataRequired()])
+     password = PasswordField(
         'Password', validators=[DataRequired()])
-    submit = SubmitField('Login')
+     submit = SubmitField('Login')
+
+
+
+
+class PostForm(FlaskForm):
+    search = SearchField()
+    title = StringField('Title', validators=[DataRequired()])
+    content = TextAreaField('Content', validators=[DataRequired()])
+    submit = SubmitField('Publish')
